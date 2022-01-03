@@ -1,0 +1,88 @@
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.leftSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: initial;
+  text-align: justify;
+  width: 100%;
+  background-image: url("https://c1.wallpaperflare.com/preview/761/268/50/anxiety-fear-mystic-mystery.jpg");
+}
+
+.rightSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+rightSide .addCommentContainer {
+  flex: 20%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 25px;
+}
+
+.addCommentContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.addCommentContainer button {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.addCommentContainer input {
+  border: 2px solid dodgerblue;
+}
+
+.rightSide .listOfComments {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listOfComments .comment {
+  width: 70%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: darkcyan;
+}
+
+.tit {
+  font-size: 30px;
+  border-bottom: 1px solid lightgray;
+  color: blueviolet;
+  text-decoration: underline;
+}
+.pText {
+  text-decoration: underline;
+  font-size: 20px;
+}
+.fT {
+  font-size: 30px;
+  color: white;
+}
+
+.ft button {
+  cursor: pointer;
+}
